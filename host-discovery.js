@@ -157,7 +157,7 @@ jsd.prototype.stop = function() {
     
     this.socket.close();
     timer.stop();
-    timer.removeAllListeners('check');
+    timer.removeAllListeners('tick');
     hosts = [];
     
 }
