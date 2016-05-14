@@ -114,7 +114,7 @@ function init(self) {
 //----------------------------------------- CLASS
 
 //------ Constructor
-function jsd(options) {
+function hd(options) {
     
     if(options == null) { options = {}; }
         
@@ -134,11 +134,11 @@ function jsd(options) {
 
 
 //------ Inherit from 'events' module
-util.inherits(jsd, event);
+util.inherits(hd, event);
 
 
 //------ Starts listening and sending packets to multicast address 
-jsd.prototype.start = function() {
+hd.prototype.start = function() {
     
     init(this);
     
@@ -153,7 +153,7 @@ jsd.prototype.start = function() {
 
 
 //------ Stops listening and sending packets 
-jsd.prototype.stop = function() {
+hd.prototype.stop = function() {
     
     this.socket.close();
     timer.stop();
@@ -164,7 +164,7 @@ jsd.prototype.stop = function() {
 
 
 //------ Returns active members
-jsd.prototype.hosts = function() {
+hd.prototype.hosts = function() {
     
     return hosts;
     
@@ -172,4 +172,4 @@ jsd.prototype.hosts = function() {
 
 
 //----------------------------------------- EXPORT MODULE
-module.exports = jsd;
+module.exports = hd;
