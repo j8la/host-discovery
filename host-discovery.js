@@ -1,7 +1,7 @@
 /*
 Name    : host-discovery.js
 Author  : Julien Blanc
-Version : 1.0.3
+Version : 1.0.4
 Date    : 17/05/2016
 NodeJS  : 6.1.0+ 
 */
@@ -69,11 +69,10 @@ function init(self) {
                     isNew = false;   
                 }
                 
-                // Creates or overrides the host item with reception time 
+                // Creates or overrides the host item  
                 hosts[rinfo.address] = {
                     address: rinfo.address,
-                    hostname: msg.host,
-                    timestamp: Date.now()
+                    hostname: msg.host
                 }
                 
                 if(isNew == true) { self.emit('join', rinfo.address); }

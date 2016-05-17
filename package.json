@@ -1,6 +1,6 @@
 {
   "name": "host-discovery",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple discovery service which sends and receives messages to/from a multicast address in JSON format.",
   "main": "host-discovery.js",
   "scripts": {

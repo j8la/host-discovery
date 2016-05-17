@@ -70,24 +70,22 @@ service.hosts();
 // The result will be :
 [ '192.168.0.11': { 
     address: '192.168.0.11',
-    hostname: 'test01',
-    timestamp: 1463186992997 
+    hostname: 'test01'
   },
   '192.168.0.12': { 
     address: '192.168.0.12',
-    hostname: 'test02',
-    timestamp: 1463186993629
+    hostname: 'test02'
   },
   '192.168.0.13': { 
     address: '192.168.0.13',
-    hostname: 'test03'
-    timestamp: 1463186993640 
+    hostname: 'test03' 
   } 
 ]
 ```
 
 ## Updates
-- `v1.0.3 :` Add "address" field to results
+- `v1.0.4 :` Remove "timestamp" field 
+- `v1.0.3 :` Add "address" field 
 - `v1.0.2 :` Fix "ReferenceError: os is not defined"
 - `v1.0.1 :` Fix "ReferenceError: util is not defined"
 - `v1.0.0 :` Initial release
