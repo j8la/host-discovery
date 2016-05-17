@@ -1,7 +1,7 @@
 /*
 Name    : host-discovery.js
 Author  : Julien Blanc
-Version : 1.0.1
+Version : 1.0.2
 Date    : 17/05/2016
 NodeJS  : 6.1.0+ 
 */
@@ -12,6 +12,7 @@ var dgram       = require('dgram');
 var eventTimer  = require('event-timer');
 var event       = require('events').EventEmitter;
 var util        = require('util');
+var os          = require("os");
 
 
 //----------------------------------------- GLOBALS

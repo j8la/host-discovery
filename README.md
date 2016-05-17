@@ -74,6 +74,7 @@ service.hosts();
 ```
 
 ## Updates
+- `v1.0.2 :` Fix "ReferenceError: os is not defined"
 - `v1.0.1 :` Fix "ReferenceError: util is not defined"
 - `v1.0.0 :` Initial release
 
