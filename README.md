@@ -70,20 +70,24 @@ service.hosts();
 // The result will be :
 [ '192.168.0.11': { 
     address: '192.168.0.11',
-    hostname: 'test01'
+    hostname: 'test01',
+    timestamp: 1463782466523
   },
   '192.168.0.12': { 
     address: '192.168.0.12',
-    hostname: 'test02'
+    hostname: 'test02',
+    timestamp: 1463782466527
   },
   '192.168.0.13': { 
     address: '192.168.0.13',
-    hostname: 'test03' 
+    hostname: 'test03',
+    timestamp: 1463782466537
   } 
 ]
 ```
 
 ## Updates
+- `v1.0.5 :` Sometimes, we are doing stupid things. Timestamp field is back and host's desinscription magically works again.
 - `v1.0.4 :` Remove "timestamp" field 
 - `v1.0.3 :` Add "address" field 
 - `v1.0.2 :` Fix "ReferenceError: os is not defined"
